@@ -1,0 +1,13 @@
+<main role="main" class="inner cover">
+    <div *ngFor="let joke of jokes;" class="jokeContainer">
+      <h1 class="cover-heading">#{{joke.jokeId}}</h1>
+      <p class="lead">{{joke.content}}</p>
+      <div class="lead">
+          <div class="btn-group" role="group" aria-label="Basic example">
+              <button (click)="addMinus(joke.id)" type="button" class="btn btn-danger"><b>-</b></button>
+              <button disabled="disabled" type="button" class="btn btn-secondary">{{joke.rate}}</button>
+              <button (click)="addPlus(joke.id)" type="button" class="btn btn-success"><b>+</b></button>
+          </div>
+        </div>
+      </div>
+    </main>

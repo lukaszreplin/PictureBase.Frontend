@@ -1,0 +1,13 @@
+<main role="main" class="inner cover">
+    <div class="jokeContainer">
+      <div class="lead">
+        <div class="form-group">
+          <label for="content">Treść żartu</label>
+          <textarea #contents class="form-control" id="content" rows="10"></textarea>
+          <label for="description">Krótki opis</label>
+          <textarea #descriptions class="form-control" id="description" rows="3"></textarea>
+        </div>
+        <button (click)="submit(contents.value, descriptions.value)" type="submit" class="btn btn-primary">Dodaj</button>
+        </div>
+      </div>
+    </main>
