@@ -29,6 +29,7 @@ export class AddJokeComponent implements OnInit {
   ngOnInit(): void {
     this.joke = new JokeToApi();
     }
+    
 
     submit(content:string, description:string) {
       this.http.post('https://localhost:44360/api/Jokes/' + content + '/' + description, this.joke ).subscribe(result => {
